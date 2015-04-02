@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+
 $("#tabhome a").click(
 	function (event) {
 		event.preventDefault();
@@ -16,5 +20,12 @@ $("#tabmsgs a").click(
 	function (event) {
 		event.preventDefault();
 		$(this).tab("show");
+	}
+);
+
+$(".llist").click(
+	function (event) {
+		$(".llist").removeClass("active");
+		$(this).addClass("active");
 	}
 );
