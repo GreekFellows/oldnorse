@@ -1,3 +1,10 @@
+$(document).ready(
+	function () {
+		$("#lbasicsi").load("lessons/basicsi.html");
+		$("#lbasicsii").load("lessons/basicsii.html");
+	}
+);
+
 $(function () {
   $('[data-toggle="popover"]').popover();
 });
